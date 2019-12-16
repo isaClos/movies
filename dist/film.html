@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche d'info par films</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Isabelle Closse">
+    <meta name="description" content="recherche films.">
+    <meta name="robots" content="all">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Saira+Stencil+One&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+
+    <nav class="nav1 navbar navbar-light row ">
+
+        <img src="images/film-1668918__340.jpg"  class="d-inline-block align-top img2" alt="">
+        <div class="logo " >LA meilleure recherche en filmographie</div>
+    </nav>
+
+
+    <nav class="row">
+
+        <ul class="nav nav-pills form1">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Multi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  active" href="film.html">Film</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="people.html">Acteurs/Actrices</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <nav class="form2 col-md-9 navbar navbar-light row">
+            <form class="form-inline col-md-10" id="searchFormF">
+                <input class="form-control col-md-10 offset-1" type="search" placeholder="Recherche" aria-label="Search" id="inputSearchF">
+
+                <button class="col-md-1 btn" type="submit" id="buttonSearch" ><img src="images/icons8-chercher-50.png" class="imgsearch" alt="" ></button>
+            </form>
+            <a class="col-md-2" id="listsearchF" href="#listResultF">Liste </a>
+        </nav>
+    </div>
+
+    <div class="row" id="listResultF">
+        <h2>Liste : </h2>
+        <ul id="ulListF">
+
+        </ul>
+    </div>
+
+    <div class="row" id="">
+        <h2>Détails :</h2>
+        <div id="detListF"></div>
+
+    </div>
+    <img src="images/doodle-1388119_960_720.png" onclick="topFunction()" id="myBtn" title="Go to top" alt="" />
+</div>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<script src="./main.js"></script>
+</body>
